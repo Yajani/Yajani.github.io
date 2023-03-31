@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>돼지 테스트</title>
+    <link rel="icon" href="../img/minion-pig01_96760.ico" type="image/x-icon">  <!--파비콘-->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/NanumYeBbeunMinGyeongCe.css" rel="stylesheet"> <!-- 글꼴 -->
+    <link rel="stylesheet" href="../돼지테스트/main.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!-- <header>
+        <section class="header"></section>
+        <section class="bottom"></section>
+    </header> -->
+    <div class="animated-entity-symbol">
+        <a href="main.html">
+            <img src="../img/Kakao.png"></a>
+          </div>
+        <section class="mainbox">
+            <div class="box title">
+              <h1 class="mini">돼지 테스트</h1>
+              <h3>제한시간은<select class="timeSelect">
+                <option value="3">3초(고수)</option>
+                <option value="7">7초(중수)</option>
+                <option value="10">10초(하수)</option>
+              </select>입니다</h3>
+                <div class="level"><button class="levelselect">코스고르기</button></div>
+                <!-- <div class="time"><button class="teamselect">혼자하기</button></div> -->
+            </div>
+
+        <div class="box imgbox">
+            <div class="randomimg"></div>
+            <img src="../돼지테스트/기본.png" alt="" id="foodimg">
+        </div>
+
+        <div class="box scorebox">
+            <div class="inputboxCover">
+                <div class="inputbox"><input type="text" id="answer" placeholder="입력하세요" autocomplete="off"></div>
+            </div>
+            <div class="outtime"></div>
+            <div class="correct"></div>
+            <div class="score">점수</div>
+            <div class="timer"></div>
+            <div class="gamestart">
+                <button class="start">시작</button>
+                    <button id="resume">
+                        다음 문제
+                    </button>
+                    <div id="a">
+                        <button id="restart">다시!</button>
+                </div>
+            </div>
+        </div>
+        <ul class="kind clearfix">
+            <li><button id="total">전체</button></li>
+            <li><button id="korea">한식</button></li>
+            <li><button id="japan">일식</button></li>
+            <li><button id="western">양식</button></li>
+            <li><button id="china">중식</button></li>
+        </ul>
+
+    </section>
+
+</body>
+
+</html>
