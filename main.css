@@ -1,4 +1,4 @@
-@import url(돼지테스트/reset.css);
+@import url(../돼지테스트/reset.css);
 
 
 .animated-entity-symbol {
@@ -10,6 +10,18 @@
     top: 30%;
     z-index: -3;
     visibility: hidden;
+    
+  }
+  .animated-entity-symbol2 {
+    color: red;
+    font-size: 20vw;
+    animation: pulse 1.2s infinite alternate;
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    z-index: -3;
+    visibility: hidden;
+    
   }
    
   
@@ -18,6 +30,33 @@
            transform: scale(1.2);
           }
         }
+.pigs{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+}
+
+.pigs .piglife{
+    position: absolute;
+    width: 70px;
+}
+.pigs .piglife img{
+    width: 50px;
+    
+}
+.pigs .piglife:nth-child(1){
+    top: 20%;
+    right: 10%;
+}
+.pigs .piglife:nth-child(2){
+    top: 20%;
+    right: 13%;
+}
+.pigs .piglife:nth-child(3){
+    top: 20%;
+    right: 16%;
+}
         
 * {
     font-family: 'NanumYeBbeunMinGyeongCe';
@@ -71,8 +110,10 @@ body .mainbox {
     /* border: 1px solid #000; */
     margin: 20px auto;
     padding: 50px;
+    
     font-family: 'NanumYeBbeunMinGyeongCe';
 }
+
 .mainbox .title h3 {
     font-size: 15px;
     font-weight: 600;
@@ -145,10 +186,11 @@ body .mainbox {
 }
 
 .mainbox .scorebox .score {
-    font-size: 20px;
+    font-size: 50px;
     margin-top: 50px;
     margin-bottom: 20px;
     font-family: 'NanumYeBbeunMinGyeongCe';
+    text-align: center;
 }
 .mainbox .scorebox .timer{
     height: 100px;
@@ -210,8 +252,11 @@ body .mainbox {
 
 }
 
-/*음식종류 카테고리  */
+.hidepig{
+    visibility: hidden;
+}
 
+/*음식종류 카테고리  */
 .kind {
     /* border: 1px solid #000; */
     height: 400px;
@@ -241,7 +286,6 @@ body .mainbox {
 }
 
 /* 오답 땡!!! 부분  */
-
 .correct {
     /* background: orange; */
     margin: auto;
@@ -250,4 +294,126 @@ body .mainbox {
     width: 450px;
     height: 400px;
     z-index: -1;
+}
+
+/* 먹는 돼지  */
+aside {
+    float: left;
+    width: 100px;
+}
+aside img {
+    width: 300px;
+}
+/* 이빨자국효과 */
+.tooth {
+    position: relative;
+}
+.tooth img{
+    position: absolute;
+    visibility: hidden;
+    right: 530px;
+    bottom: px;
+    width: 800px;
+ 
+}
+
+/* 시작 페이지 fade in out 구현 */
+.fadeffect {
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    background: white;
+    font-size: 100px;
+    animation: fadeout 4s;
+    visibility: hidden;
+    
+}
+.fadeffect p {
+    margin-top: 300px;
+    font-family: 'TTTtangsbudaejjigaeB', serif;
+}
+@font-face {
+    font-family: 'TTTtangsbudaejjigaeB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@keyframes fadeout {
+    from {
+        visibility: visible;
+        z-index: 22;
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -100;
+    } 
+}
+/* fadeout 효과 end */
+
+
+
+/* 먹는 돼지  */
+aside {
+    float: left;
+    width: 100px;
+}
+aside img {
+    width: 300px;
+}
+/* 이빨자국효과 */
+.tooth {
+    position: relative;
+}
+.tooth img{
+    position: absolute;
+    visibility: hidden;
+    right: 530px;
+    bottom: px;
+    width: 800px;
+ 
+}
+
+/* 시작 페이지 fade in out 구현 */
+.fadeffect {
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    background: white;
+    font-size: 100px;
+    animation: fadeout 4s;
+    visibility: hidden;
+    
+}
+.fadeffect p {
+    margin-top: 300px;
+    font-family: 'TTTtangsbudaejjigaeB', serif;
+}
+@font-face {
+    font-family: 'TTTtangsbudaejjigaeB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@keyframes fadeout {
+    from {
+        visibility: visible;
+        z-index: 22;
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -100;
+    } 
+}
+/* fadeout 효과 end */
+
+
+
+.show {
+    visibility: visible;
 }
