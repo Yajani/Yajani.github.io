@@ -68,33 +68,23 @@ $btn.onclick = function () {
 
   if ($btn.getAttribute('id') === 'korea') {
     selectedCourse = korea;
-    // console.log(selectedCourse);
     $level.disabled = true;
-    // imgMatch(selectedCourse);
 
   } else if ($btn.getAttribute('id') === 'japan') {
     selectedCourse = Japan;
-    // console.log(selectedCourse);
     $level.disabled = true;
-    // imgMatch(selectedCourse);
 
   } else if ($btn.getAttribute('id') === 'western') {
     selectedCourse = Western;
-    // console.log(selectedCourse);
     $level.disabled = true;
-    // imgMatch(selectedCourse);
 
   } else if ($btn.getAttribute('id') === 'total') {
     selectedCourse = korea.concat(Japan, China, Western);
-    // console.log(selectedCourse);
     $level.disabled = true;
-    // imgMatch(selectedCourse);
 
   } else {
     selectedCourse = China;
-    // console.log(selectedCourse);
     $level.disabled = true;
-    // imgMatch(selectedCourse);
 
   }
   return false;
@@ -151,10 +141,7 @@ startBtn.onclick = function () { // start버튼 누르면 사라지는 함수
 function imgMatch(selectedCourse) {
 //사진 랜덤 함수
 //이미지랜덤 숫자
-// const imgNum = randomFood();
 //이미지 보이기 
-// let objImg = document.getElementById('foodimg');
-// objImg.setAttribute('src', selectedFood);
 
 const random = rdimg();
 const selectedFood = selectedCourse[random].img;
@@ -172,13 +159,11 @@ $inputAnswer.onkeyup = (e) => {
     } else {
       $inputAnswer.value = '';
       --countLife;
-      // console.log($pigLife[countLife]);
       $pigLife[countLife].remove();
       $timer.textContent = `남은시간 : ${makeGameData().timeSelect()}`;
       clearInterval(timeSurv);
       timeAttack();
       imgMatch(selectedCourse);
-      // console.log(countLife);
       if (countLife === 0) {
         $inputAnswer.disabled = true;
         failed();
@@ -190,14 +175,12 @@ $inputAnswer.onkeyup = (e) => {
 
 function rdimg() { // 랜덤 숫자 리턴 함수
 let foodimg = Math.round(Math.random() * selectedCourse.length);
-// console.log(foodimg); // 랜덤이미지 생성
+ // 랜덤이미지 생성
 let objImg = document.getElementById('foodimg');
 objImg.setAttribute('src', selectedCourse[foodimg].img);
 
 return foodimg;
 }
-
-// const $tooth = document.querySelector('.tooth img');
 
 function corrected() { // 정답일때 나오는 함수
   //정답일때 돼지가 앙
@@ -205,15 +188,12 @@ function corrected() { // 정답일때 나오는 함수
 
 $correct.textContent = '정답입니다!!';
   score++;
-//   $score.style.width = '100px';
   $score.textContent = '  ' + score + ' 점';
   $inputAnswer.value = '';
-  // console.log('맞음');
 
 //10회 미만으로 맞췄을때 실행
   if (score < 5) {
     $imgbox.animate([
-      // {transform : 'scale(0.2)'},
       {
         transform: 'rotateX(360deg)'
       },
@@ -259,7 +239,6 @@ $correct.textContent = '정답입니다!!';
   $timer.textContent = `남은시간 :`;
   clearInterval(timeSurv);
   $inputAnswer.readOnly = true;
-    // alert(`당신은 엄청난 돼지입니다!!!!!!으아갸갸갹!!!!`);
   }
     //정답일때 돼지가 앙
   
@@ -273,14 +252,11 @@ let $newImg = document.createElement('img');
     $imgbox.appendChild($newImg);
     let objImg = document.getElementById('foodimg');
 objImg.setAttribute('src', '../돼지테스트/기본.png');
-// console.log('땡');
 $boomPig.setAttribute('style', 'z-index: 3; visibility: visible');
-// $pigLife[countLife].classList.add('hidden');
 $inputAnswer.value = '';
 $score.innerHTML = '땡!!!!<br>' + '점수: ' + score + '점';
 $timer.textContent = '';
 clearInterval(timeSurv);
-// $correct.textContent = '땡!!';
 $score.style.cssText = `z-index = 100; font-weight: 700; font-size: 40px; background:white;`;
 }
 
@@ -296,19 +272,16 @@ timeSurv = setInterval(function () { // 난이도에 따라 타이머 설정
     $inputAnswer.textContent = '';
     $inputAnswer.value = '';
       --countLife;
-      // console.log($pigLife[countLife]);
       $pigLife[countLife].remove();
       $timer.textContent = `남은시간 : ${makeGameData().timeSelect()}`;
       clearInterval(timeSurv);
       timeAttack();
       imgMatch(selectedCourse);
-      // console.log(countLife);
       if (countLife === 0) {
         $inputAnswer.disabled = true;
         failed();
       }
-  }
-  // $inputAnswer.value = ''; // 입력하세요 없애기
+  }// 입력하세요 없애기
   $inputAnswer.focus(); // 시작 버튼 누르면 input 커서 위치
 
 }, 1000);
