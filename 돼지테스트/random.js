@@ -68,6 +68,50 @@ const korea = [
      {food : '부대찌개',
      img : './photo/부대찌개.jpg'},
 
+
+     { food: "불고기", img: "./photo/불고기.jpg" },
+
+     { food: "산채비빔밥", img: "./photo/산채비빔밥.jpg" },
+
+     { food: "된장찌개", img: "./photo/된장찌개.jpg" },
+
+     { food: "잡탕", img: "./photo/잡탕.jpg" },
+
+     { food: "갈비전골", img: "./photo/갈비전골.jpg" },
+
+     { food: "된장국", img: "./photo/된장국.jpg" },
+
+     { food: "미역국", img: "./photo/미역국.jpg" },
+
+     { food: "삼계탕", img: "./photo/삼계탕.jpg" },
+
+     { food: "떡갈비", img: "./photo/떡갈비.jpg" },
+
+     { food: "해물파전", img: "./photo/해물파전.jpg" },
+
+     { food: "알탕", img: "./photo/알탕.jpg" },
+
+     { food: "냉모밀", img: "./photo/냉모밀.jpg" },
+
+     { food: "미소된장국", img: "./photo/미소된장국.jpg" },
+
+     { food: "돌솥비빔밥", img: "./photo/돌솥비빔밥.jpg" },
+
+     { food: "김치볶음밥", img: "./photo/김치볶음밥.jpg" },
+
+     { food: "콩비지찌개", img: "./photo/콩비지찌개.jpg" },
+
+     { food: "불낙전골", img: "./photo/불낙전골.jpg" },
+
+     { food: "청국장찌개", img: "./photo/청국장찌개.jpg" },
+
+     { food: "삼치조림", img: "./photo/삼치조림.jpg" },
+
+     { food: "고등어조림", img: "./photo/고등어조림.jpg" },
+
+     { food: "장어구이", img: "./photo/장어구이.jpg" },
+
+
    ];
 
 
@@ -116,9 +160,6 @@ const korea = [
     {food : '팔보채',
     img : './photo/팔보채.jpg'},
     
-    {food : '유타오',
-    img : './photo/유타오.jpg'},
-    
     {food : '어향육사',
     img : './photo/어향육사.jpg'},
     
@@ -146,6 +187,13 @@ const korea = [
     {food : '방탕후루',
     img : './photo/방탕후루.jpg'},
     
+    {
+        food: "짜장면",
+        img : './photo/짜장면.jpg'
+    },
+  
+
+
 ];
 
 
@@ -178,23 +226,30 @@ const Japan = [
     {food : '야키토리',
     img : './photo/야키토리.jpg'},
 
-    {food : '타코야끼',
-    img : './photo/타코야끼.jpg'},
-
-    {food : '우메보시',
-    img : './photo/우메보시.jpg'},
-
- 
     {food : '우동',
     img : './photo/우동.jpg'},
 
- 
     {food : '야키니쿠',
     img : './photo/야키니쿠.jpg'},
 
  
     {food : '규동',
     img : './photo/규동.jpg'},
+
+    {
+        food: "오코노미야키",
+        img : './photo/오코노미야키.jpg'
+    },
+
+    {
+        food: "야끼소바",
+        img : './photo/야끼소바.jpg'
+    },
+
+
+
+
+
 ];
 const Western = [
 
@@ -206,9 +261,6 @@ const Western = [
 
     {food : '햄버거',
     img : './photo/햄버거.jpg'},
-
-    {food : '피자',
-    img : './photo/피자.jpg'},
 
     {food : '리조또',
     img : './photo/리조또.jpg'},
@@ -231,11 +283,23 @@ const Western = [
     {food : '맥앤치즈',
     img : './photo/맥앤치즈.jpg'},
 
-    {food : '핫도그',
-    img : './photo/핫도그.jpg'},
+    { food: "치킨너겟",
+    img : './photo/치킨너겟.jpg'
+},
 
-    {food : '라쟈냐',
-    img : './photo/라쟈냐.jpg'},
+    { food: "멕시칸샐러드",
+    img : './photo/멕시칸샐러드.jpg'
+},
+    { food: "쉬림프샐러드",
+    img : './photo/쉬림프샐러드.jpg'
+},
+    { food: "참치샐러드" ,
+    img : './photo/참치샐러드.jpg'
+},
+    { food: "치즈케이크", 
+    img : './photo/치즈케이크.jpg'
+},
+
 
 ];
 
@@ -351,9 +415,6 @@ const all = [
     {food : '팔보채',
     img : './photo/팔보채.jpg'},
     
-    {food : '유타오',
-    img : './photo/유타오.jpg'},
-    
     {food : '어향육사',
     img : './photo/어향육사.jpg'},
     
@@ -411,9 +472,6 @@ const all = [
     {food : '타코야끼',
     img : './photo/타코야끼.jpg'},
 
-    {food : '우메보시',
-    img : './photo/우메보시.jpg'},
-
     {food : '우동',
     img : './photo/우동.jpg'},
 
@@ -423,17 +481,12 @@ const all = [
     {food : '규동',
     img : './photo/규동.jpg'},
 
-    {food : '파스타',
-    img : './photo/파스타.jpg'},
 
     {food : '피쉬앤칩스',
     img : './photo/피쉬앤칩스.jpg'},
 
     {food : '햄버거',
     img : './photo/햄버거.jpg'},
-
-    {food : '피자',
-    img : './photo/피자.jpg'},
 
     {food : '리조또',
     img : './photo/리조또.jpg'},
@@ -459,46 +512,7 @@ const all = [
     {food : '핫도그',
     img : './photo/핫도그.jpg'},
 
-    {food : '라쟈냐',
-    img : './photo/라쟈냐.jpg'},
 
 ];
 
-// console.log(korea.length) 
-// 메뉴별 length
-// all : 74
-// china : 24
-// japan : 14
-//  western : 13
-// korea : 23 
-
-// let question;
-// function rdimg() {
-
-//     let foodimg = Math.round(Math.random() * 26);  // 26 => select 코스별 선택하게 바꿔야함
-//     // console.log(foodimg); // 랜덤이미지 생성
-//     question = korea[foodimg].food;
-//     let objImg = document.getElementById('foodimg');
-//     objImg.setAttribute('src', korea[foodimg].img); // korea => 코스별로 바뀌게 해야함
-// }
-// rdimg();
-
-<<<<<<< HEAD
-// console.log(question)
-let order = 0;
-function Enter(){  // answer가 입력하는 답안 // 
-    let answer = document.getElementById("answer").value;
-    if(window.event.keyCode === 13){
-    //     if(question === answer){
-    //         order++;
-            console.log(answer);
-        }
-    // }else{
-    //     // return; 
-    // }
-}
-
-function answerFood () {
-    if(anwer ===)
-} 
-
+export {korea,China,Japan,Western,all};

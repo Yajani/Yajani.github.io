@@ -3,7 +3,9 @@
 Great source for entity symbols:
 https://www.toptal.com/designers/htmlarrows/symbols/
 */
-
+* {
+  font-family: 'NanumYeBbeunMinGyeongCe';
+}
 .animated-entity-symbol {
     color: red;
     font-size: 20vw;
@@ -19,6 +21,9 @@ https://www.toptal.com/designers/htmlarrows/symbols/
         
   
   body {
+    max-width: 1080px;
+    margin: 20px auto 100px;
+    width: 80%;
     background: pink;
     height: 100vh;
     display: flex;
@@ -26,5 +31,48 @@ https://www.toptal.com/designers/htmlarrows/symbols/
     align-items: center;
     flex-direction: column;
   }
+
   
-  
+  #main {
+    width: 80%;
+    margin: 10px auto;
+    /* border: 1px solid #000; */
+    text-align: center;
+    display: flex;
+    
+}
+
+#main #choice {
+    width: 100%;
+    /* border: 1px solid #000; */
+    /* background: red; */
+    /* text-align: center; */
+    /* justify-content: space-evenly; */
+  }
+  #main #games {
+    justify-content: space-evenly;
+    /* background: blue; */
+    display: flex;
+  }
+  #main #games li {
+    font-size: 3rem;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10%;
+    background-color: rgb(248, 182, 193);
+    box-shadow: 1px 1px 3px rgb(219, 136, 194);
+    
+    float: left;
+    /* margin-right:10px; */
+    justify-content: space-evenly;
+
+}
+
+
+#main #choice #games a {
+list-style: none;
+text-decoration: none;
+}
+#up {
+  font-family: 'NanumYeBbeunMinGyeongCe';
+}
