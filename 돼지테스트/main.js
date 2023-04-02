@@ -292,16 +292,7 @@ timeSurv = setInterval(function () { // 난이도에 따라 타이머 설정
   $timer.setAttribute('value', tim);
   tim--;
   $timer.textContent = `남은시간 : ${tim}`;
-  // console.log(timeSurv);
   if (tim === 0) {
-    // $inputAnswer.disabled = true;
-    // $timer.textContent = '';
-    // --countLife;
-    // imgMatch(selectedCourse);
-    // console.log(countLife);
-    // if (countLife === 0) {
-    //   failed();
-    // }
     $inputAnswer.textContent = '';
     $inputAnswer.value = '';
       --countLife;
