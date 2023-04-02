@@ -451,20 +451,10 @@ function timeAttack() { // 남은시간 카운트 다운해주는 함수
     $timer.setAttribute('value', tim);
     tim--;
     $timer.textContent = `남은시간 : ${tim}`;
-    // console.log(timeSurv);
     if (tim === 0) {
-      // $inputAnswer.disabled = true;
-      // $timer.textContent = '';
-      // --countLife;
-      // imgMatch(selectedCourse);
-      // console.log(countLife);
-      // if (countLife === 0) {
-      //   failed();
-      // }
       $inputAnswer.textContent = '';
     $inputAnswer.value = '';
         --countLife;
-        // console.log($pigLife[countLife]);
         $pigLife[countLife].remove();
         $timer.textContent = `남은시간 : ${makeGameData().timeSelect()}`;
         clearInterval(timeSurv);
