@@ -700,28 +700,18 @@ $catalog.forEach(($btn) => { // 선택해야할 코스들
 
     if ($btn.getAttribute('id') === 'country') {
       selectedCourse = country;
-      console.log(selectedCourse);
-      // imgMatch(selectedCourse);
 
     } else if ($btn.getAttribute('id') === 'easy') {
       selectedCourse = easy;
-      console.log(selectedCourse);
-      // imgMatch(selectedCourse);
 
     } else if ($btn.getAttribute('id') === 'normal') {
       selectedCourse = normal;
-      console.log(selectedCourse);
-      // imgMatch(selectedCourse);
 
     } else if ($btn.getAttribute('id') === 'hard') {
       selectedCourse = hard;
-      console.log(selectedCourse);
-      // imgMatch(selectedCourse);
 
     } else {
       selectedCourse = country;
-      console.log(selectedCourse);
-      // imgMatch(selectedCourse);
 
     }
     return false;
@@ -778,10 +768,7 @@ function startGameBtn() {
 function imgMatch(selectedCourse) {
   //사진 랜덤 함수
   //이미지랜덤 숫자
-  // const imgNum = randomFood();
   //이미지 보이기 
-  // let objImg = document.getElementById('foodimg');
-  // objImg.setAttribute('src', selectedFood);
 
   const random = rdimg();
   const selectedFood = selectedCourse[random].img;
@@ -799,13 +786,11 @@ function imgMatch(selectedCourse) {
       } else {
         $inputAnswer.value = '';
         --countLife;
-        // console.log($pigLife[countLife]);
         $pigLife[countLife].remove();
         $timer.textContent = `남은시간 : ${makeGameData().timeSelect()}`;
         clearInterval(timeSurv);
         timeAttack();
         imgMatch(selectedCourse);
-        console.log(countLife);
         if (countLife === 0) {
           $inputAnswer.disabled = true;
           failed();
@@ -817,28 +802,25 @@ function imgMatch(selectedCourse) {
 
 function rdimg() { // 랜덤 숫자 리턴 함수
   let foodimg = Math.round(Math.random() * selectedCourse.length);
-  // console.log(foodimg); // 랜덤이미지 생성
   let objImg = document.getElementById('foodimg');
   objImg.setAttribute('src', selectedCourse[foodimg].img);
 
   return foodimg;
 }
 
-// const $tooth = document.querySelector('.tooth img');
 
 function corrected() { // 정답일때 나오는 함수
     //정답일때 돼지가 앙
 
     $correct.textContent = '정답입니다!!';
     score++;
-  //   $score.style.width = '100px';
+
     $score.textContent = '  ' + score + ' 점';
     $inputAnswer.value = '';
-    // console.log('맞음');
+
 
      if (score < 5) {
   $imgbox.animate([
-    // {transform : 'scale(0.2)'},
     {
       transform: 'rotateX(360deg)'
     },
@@ -900,7 +882,6 @@ function failed() { // 틀렸을때 나오는 함수
       $imgbox.appendChild($newImg);
       let objImg = document.getElementById('foodimg');
   objImg.setAttribute('src', '../돼지테스트/기본.png');
-  // console.log('땡');
   $boomPig.setAttribute('style', 'z-index: 3; visibility: visible');
   // $pigLife[countLife].classList.add('hidden');
   $inputAnswer.value = '';
@@ -928,7 +909,6 @@ function timeAttack() { // 남은시간 카운트 다운해주는 함수
         clearInterval(timeSurv);
         timeAttack();
         imgMatch(selectedCourse);
-        console.log(countLife);
         if (countLife === 0) {
           $inputAnswer.disabled = true;
           failed();
