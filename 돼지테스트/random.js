@@ -289,9 +289,6 @@ const Western = [
     { food: "쉬림프샐러드",
     img : './photo/쉬림프샐러드.jpg'
 },
-    { food: "참치샐러드" ,
-    img : './photo/참치샐러드.jpg'
-},
     { food: "치즈케이크", 
     img : './photo/치즈케이크.jpg'
 },
