@@ -657,7 +657,7 @@ const $pig = document.querySelector('.eatingPig'); //포크를든 돼지
 //fade 효과 적용하기 
 let $fade = document.querySelector('.fadeffect');
 
-
+let randomNumbers = [];
 
 var timeSurv;
 let countLife = 3;
@@ -801,12 +801,22 @@ function imgMatch(selectedCourse) {
 }
 
 function rdimg() { // 랜덤 숫자 리턴 함수
-  let foodimg = Math.round(Math.random() * selectedCourse.length);
-  let objImg = document.getElementById('foodimg');
+  let foodimg ;
+  while(true){
+   foodimg = Math.round(Math.random() * selectedCourse.length);
+    if(randomNumbers.includes(foodimg)){
+      // console.log(foodList+'중복으로 다시');
+      continue;
+    }else{
+      let objImg = document.getElementById('foodimg');
+      // console.log(foodimg+'중복제거');
   objImg.setAttribute('src', selectedCourse[foodimg].img);
-
-  return foodimg;
-}
+      randomNumbers.push(foodimg);
+      return foodimg;
+    }
+  }
+   // 랜덤이미지 생성
+  }
 
 
 function corrected() { // 정답일때 나오는 함수
