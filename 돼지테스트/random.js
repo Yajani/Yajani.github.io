@@ -236,10 +236,6 @@ const Japan = [
     {food : '규동',
     img : './photo/규동.jpg'},
 
-    {
-        food: "오코노미야키",
-        img : './photo/오코노미야키.jpg'
-    },
 
 
 
@@ -249,8 +245,6 @@ const Japan = [
 ];
 const Western = [
 
-    {food : '파스타',
-    img : './photo/파스타.jpg'},
 
     {food : '피쉬앤칩스',
     img : './photo/피쉬앤칩스.jpg'},
@@ -289,9 +283,7 @@ const Western = [
     { food: "쉬림프샐러드",
     img : './photo/쉬림프샐러드.jpg'
 },
-    { food: "치즈케이크", 
-    img : './photo/치즈케이크.jpg'
-},
+
 
 
 ];
