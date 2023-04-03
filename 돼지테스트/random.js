@@ -401,9 +401,6 @@ const all = [
     {food : '중쯔',
     img : './photo/중쯔.jpg'},
     
-    {food : '샥스핀',
-    img : './photo/샥스핀.jpg'},
-    
     {food : '마파두부',
     img : './photo/마파두부.jpg'},
     
