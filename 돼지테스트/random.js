@@ -416,8 +416,6 @@ const all = [
     {food : '가라아게',
     img : './photo/가라아게.jpg'},
 
-    {food : '고로케',
-    img : './photo/고로케.jpg'},
 
     {food : '낫토',
     img : './photo/낫토.jpg'},
