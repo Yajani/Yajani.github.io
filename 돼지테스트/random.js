@@ -130,12 +130,6 @@ const korea = [
     {food : '꽃빵',
     img : './photo/꽃빵.jpg'},
 
-    {food : '난자완스',
-    img : './photo/난자완스.jpg'},
-
-    {food : '동파육',
-    img : './photo/동파육.jpg'},
-
     {food : '딤섬',
     img : './photo/딤섬.jpg'},
 
