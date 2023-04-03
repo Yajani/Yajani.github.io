@@ -273,12 +273,6 @@ const Western = [
     img : './photo/치킨너겟.jpg'
 },
 
-    { food: "멕시칸샐러드",
-    img : './photo/멕시칸샐러드.jpg'
-},
-    { food: "쉬림프샐러드",
-    img : './photo/쉬림프샐러드.jpg'
-},
 
 
 
