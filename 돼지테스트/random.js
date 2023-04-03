@@ -187,10 +187,6 @@ const korea = [
     {food : '방탕후루',
     img : './photo/방탕후루.jpg'},
     
-    {
-        food: "짜장면",
-        img : './photo/짜장면.jpg'
-    },
   
 
 
